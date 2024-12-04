@@ -5,6 +5,7 @@ export const config = {
 }
 
 export default async function (req: Request) {
+    console.log("开始请求")
     const params = await req.json()
     const settings = getPluginSettingsFromRequest(req)
     console.log('settings', settings)
