@@ -4,7 +4,7 @@
     "identifier": "my_google-cse",
     "author": "vsnthdev",
     "homepage": "https://github.com/vsnthdev/google-cse-lobechat",
-    "gateway": "http://localhost:3000/api/gateway",
+    "gateway": "http://192.168.137.76:3000/api/gateway",
     "meta": {
         "avatar": "https://banner2.cleanpng.com/20180413/rfe/avfci721i.webp",
         "tags": [
@@ -36,7 +36,7 @@
     "api": [
         {
             "name": "searchGoogle",
-            "url": "http://localhost:3000/api/search",
+            "url": "http://192.168.137.76:3000/api/search",
             "description": "Search Google for relevant web pages.",
             "parameters": {
                 "required": [
