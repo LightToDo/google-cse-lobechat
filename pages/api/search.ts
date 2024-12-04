@@ -17,7 +17,7 @@ export default async function (req: Request) {
 
     try {
         const returnable: any[] = []
-        const search = await fetch(`https://www.googleapis.com/customsearch/v1?key=${settings.API_KEY}&cx=${settings.ENGINE_ID}&q=${encodeURIComponent(params.query)}`)
+        const search = await fetch(`https://customsearch.googleapis.com/customsearch/v1?key=${settings.API_KEY}&cx=${settings.ENGINE_ID}&q=${encodeURIComponent(params.query)}`)
         const json = await search.json()
 
         for (const item of json.items) {
